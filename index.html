@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hack36.. 2019</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Hack6 1.0 - First edition of annual hackathon organized by IIT Mnadi">
+	<meta name="keywords" content="Hackathon,IIT,maNDI,Hack,Team,2018,Nimbus">
+	<meta name="author" content="Ruchika Sharan  <ruchikasharan19@gmail.com>">
+	<link rel="shortcut icon" href="./images/logo1.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			let devfolioOptions = {
+					buttonSelector: '#devfolio-apply-now',
+					key: 'hack36',
+			}
+
+			let script = document.createElement('script');
+			script.src = "https://apply.devfolio.co";
+			document.head.append(script);
+
+			script.onload = function () {
+					new Devfolio(devfolioOptions);
+					let e1 = document.createElement('div');
+					e1.className = "button-back";
+					document.getElementById("devfolio-apply-now").appendChild(e1);
+			}
+
+			script.onerror = function () {
+					document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+						window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+					});
+			}
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="blurred"></div>
+		<ul class="nav">
+			<li class="head">
+				<span class="closeHeader">
+					<img src="./images/cross.png">
+				</span>
+			</li>
+			<li class="navItem active"> Home </li>
+			<li class="navItem"> Objective </li>
+			<!-- <li class="navItem"> Gallery </li> -->
+			<li class="navItem"> Roadways </li>
+			<li class="navItem"> Schedule </li>
+			<li class="navItem"> Sponsors </li>
+			<li class="navItem"> Prizes </li>
+			<li class="navItem"> FAQs </li>
+		</ul>
+	</div>
+	<div class="fullOverlay"></div>
+	<div class="content">
+		<div class="hamburger">
+			<img src="./images/menu.png">
+		</div>
+		<div class="appteam-logo">
+			<img src="./images/logo3.PNG" title="App Team">
+		</div>
+		<div class="frame frame1">
+			<div class="frame1-right">
+				<img src="./images/peop2.jpeg">
+			</div>
+			<div class="frame1-left">
+				<div class="content">
+					<div class="sponsor-name animated infinite pulse"> <img src="./images/iitmpc.jpg" class="github-home-icon"> Presents </div><br><br>
+					<div class="name animated fadeInDown pulse"> Hack36</div><br><br><br>
+					<div class="date"> 8 - 10 November 2019 </div><br>
+					<div class="date"> IIT Mandi </div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="frame frame2">
+				<div class="frame2-left animated infinite pulse">
+					<img src="./images/peo1.png">
+				</div>
+			<div class="frame2-right">
+				<div class="name animated infinite headShake"> Objective </div>
+				<div class="content">
+					<p>
+						Hack36 plans to build an environment of collaborative growth amongst all the participants. Hack36 is open to everyone with a crazy idea and a will to implement it into a working prototype. 
+					</p>
+					<p>
+						Hack36 will try their level best to make sure that all candidates get a fair chance to put-forth their ideas and showcase their experience and talent.
+					</p>
+					<p>
+						FurtherMore, we have introduced various amazing prizes to the lucrative participants.
+					</p>
+					<p>
+						See our Code of Conduct <a href="https://hackcodeofconduct.org/" target="__blank">Here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame3">
+			<div class="frame5-content">
+				<div class="name animated infinite headShake"> Roadways </div>
+				<div class="track-icons">
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Roads/blockchain.jpeg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Roads/blockchain-color.svg">
+						</div>
+						<div class="track-name">
+							Blockchain
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Roads/iot.jpeg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Roads/iot-color.svg">
+						</div>
+						<div class="track-name">
+							IoT
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Roads/ai.jpeg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Roads/ai-color.svg">
+						</div>
+						
+						<div class="track-name">
+							AI
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Roads/webapp.png">
+						</div>
+						<div class="colorful">
+							<img src="./images/Roads/webapp-color.svg">
+						</div>
+						<div class="track-name">
+							Web&nbsp;/&nbsp;App
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Roads/vr.jpeg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Roads/vr-color.svg">
+						</div>
+						<div class="track-name">
+							Android&nbsp;/&nbsp;App
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Roads/general.png">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/general-color.svg">
+						</div>
+						<div class="track-name">
+							General
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame4">
+				<div class="frame4-left animated infinite pulse">
+					<img src="./images/peo2.png">
+				</div>
+			<div class="frame4-right">
+				<div class="name animated infinite headShake"> Timeline </div>
+				<div class="timeline">
+					<div class="schedule schedule-1">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 8th November 2019 </div>
+							<div class="schedule-title"> Opening Ceremony and Pre Hackathon meet </div>
+							<div class="schedule-text"> <span class="schedule-time"> 12:00 PM - </span> Inauguration </div>
+							<div class="schedule-text"> <span class="schedule-time"> 12:25 PM - 12:30 PM - </span> Schedule + Rules of Events </div>
+							<div class="schedule-text"> <span class="schedule-time"> 1:00 PM - 9:00 PM - </span> Doubts and Team formation discussions </div>
+						</div>
+					</div>
+					<div class="schedule schedule-2">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 9th November 2019 </div>
+							<div class="schedule-title"> Hacking begins </div>
+							<div class="schedule-text"> <span class="schedule-time"> 8:00 AM - </span> Commencement of Hackathon Day-1 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 2:00 PM - 8:00 PM - </span> Evaluation Day-1 </div>
+						</div>
+					</div>
+					<div class="schedule schedule-3">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 10th November 2019 </div>
+							<div class="schedule-title"> Presentation and Judgement </div>
+							<div class="schedule-text"> <span class="schedule-time"> 1:00 PM - 5:00 PM - </span> Evaluation Day-2 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - </span> Code Submission Deadline </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - 5:30 PM - </span> Photoshoot </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:30 PM - 6:30 PM - </span> Announcement of Teams for Presentation </div>
+							<div class="schedule-text"> <span class="schedule-time"> 6:30 PM - 7:30 PM - </span> Presentations of Selected Teams </div>
+							<div class="schedule-text"> <span class="schedule-time"> 7:30 PM - 8:00 PM - </span> Felicitation </div>
+							<div class="schedule-text"> <span class="schedule-time"> 8:15 PM - 8:30 PM - </span> Prize Distribution </div>
+							<div class="schedule-text"> <span class="schedule-time"> 8:30 PM - 8:45 PM - </span> Vote of Thanks </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame5">
+			<div class="frame5-content">
+				<div class="name animated infinite headShake"> Sponsors </div>
+				<div class="sponsor-icons">
+					<div class="sponsor-icon">
+						<a href="https://codingblocks.com/" target="__blank"><img src="./images/Sponsors/coding_blocks.png"></a>
+					</div>
+					<br><br>
+					<div class="sponsor-icon">
+						<a href="https://simbachain.com/" target="__blank"><img src="./images/Sponsors/hacker_earth.png"></a>
+					</div>
+				</div>
+				<div class="frame5-text">
+					Interested in making 'Hack36' a huge success.<br>
+					Come join us by sponsoring us. Check the &nbsp;<a href="./pdf/sponsorship-brochure.pdf" target="__blank">Sponsorship Brochure</a>&nbsp; for more details.
+				</div>
+			</div>
+		</div>
+		<div class="frame frame6">
+			<div class="name animated infinite headShake"> Prizes </div>
+			<div class="prizes">
+				<div class="prizes-cont">
+					<div class="prize">
+						<div class="prize-img ">
+							<img src="./images/prizes.jpeg">
+						</div>
+						<div class="prize-text">
+							Total Prize to be won:<br>Worth ₹ 10000 
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/winning.jpeg">
+						</div>
+						<div class="prize-text">
+							Top 3 teams - T-Shirts/Bags and Coupons
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame7">
+			<div class="frame7-content">
+				<div class="name animated infinite headShake">
+					FAQs
+				</div>
+				<div class="faq">
+					<div class="question">
+						Is this hackathon an online event or offline?
+					</div>
+					<div class="answer">
+						Hack36 is offline event and as a participant you need to be studying in IIT Mandi, that's all!!
+					</div>
+
+				</div>
+				<div class="faq">
+					<div class="question">
+						Do this hackathon has any participation fees for students?
+					</div>
+					<div class="answer">
+						No. The hackathon is free of cost for any student from any college all over India.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What are all the restrictions on Team formations for the event?
+					</div>
+					<div class="answer">
+						A team can have at most 4 members and minimum of 2 members.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What should I do if I do not have any team yet?
+					</div>
+					<div class="answer">
+						Just fill out the application form and according to skills you have filled out, we will match you with the best team possible during Pre-Hackathon meeting.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What are the Perks and Benefits of Participating in this Hackathon?
+					</div>
+					<div class="answer">
+						Hackathon Provide hands on experience with the experts from different field working on the Projects like Web-App, AI, Machine Learning, etc. This will help to give a head start if any one want to make project on the field. Along with that the participant will be provided with cool swags, stickers and refreshments to keep them up.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						I have a question related to hackathon which is not listed above. What should I do?
+					</div>
+					<div class="answer">
+						Feel free to reach us out. Just drop us a mail at <a href="">hack36@gmail.com</a><br>
+						You can also contact one of our organizers
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame8">
+			<div class="footer-icons">
+				<a href="https://github.com/" target="__blank"><img src="./images/git.png"></a>
+				<a href="https://www.facebook.com/" target="__blank"><img src="./images/fb.png"></a>
+				<a href="https://www.instagram.com/" target="__blank"><img src="./images/insta.jpeg"></a>
+				<a href="https://twitter.com/" target="__blank"><img src="./images/twitter.png"></a>
+				<a href="https://www.linkedin.com/" target="__blank"><img src="./images/linked.png"></a>
+				<a href=""><img src="./images/email.png"></a>
+			</div>
+			<div class="footer-text">
+				<a href="https://hackcodeofconduct.org/" target="__blank"> Code of Conduct </a>
+			</div>
+			<div class="footer-text">
+				&copy; 2019 Team Hack36
+			</div>
+			Made with &nbsp;&nbsp;<span class="heart">❤️</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/menu.js"></script>
+</body>
+</html>
